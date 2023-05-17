@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.cdnfonts.com/css/neutral-face" rel="stylesheet">
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/app.js" defer></script>
+	<title>Viktoria Potapova</title>
+</head>
+<body>
+	<header>
+		<a href="index.html" class="logo"><div class="logo">
+			Victoria
+			<p>Potapova</p>
+		</div>	
+		</a>
+		
+		<span onclick="openNav()" class="menu__btn">☰</span>
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="#1"  onclick="closeNav()">Портфолио</a>
+				<a href="#2" onclick="closeNav()">Обо мне</a>
+				<a href="#3" onclick="closeNav()">Услуги</a>
+				<a href="#4" onclick="closeNav()">Контакты</a>
+			</div>
+		</div>
+		
+	</header>
+
+	<section class="container">
+		<div class="desc_text">
+			<h1>
+				Привет! Мeня зовут Вика, мне 19 лет, и я хочу покорить этот скучный мир.
+			</h1>
+			
+			<h2>
+				Я ценю творчество, сочувствие и свободу превыше всего. 
+				Эти идеалы определяют мой подход к решению проблем и жизни в целом.
+			</h2>
+			
+			<a href="#1"><button class="click">
+				хочу с тобой сотрудничать!
+			</button>
+			</a>
+			
+
+		</div>
+		
+	</section>
+
+	<section class="aboutme" id="1">
+		<h1 class="whoami" >Мои работы</h1>
+
+		<div class="content_collage">
+			
+			<div class="content-item">
+				<div class="element-animation">
+					<img src="./img/work/2.png" alt="">
+				</div>
+				
+			</div>
+			<div class="content-item">
+				<div class="element-animation">
+				<img src="./img/work/4.png" alt="">
+			</div>
+			</div>
+			<div class="content-item">
+				<div class="element-animation">
+				<img src="./img/work/10.png" alt="">
+			</div>
+			</div>
+			<div class="content-item">
+				<div class="element-animation">
+				<img src="./img/work/11.png" alt="">
+			</div>
+			</div>
+			<div class="content-item">
+				<div class="element-animation">
+				<img src="./img/work/ceramicheart.png" alt="">
+			</div>
+			</div>
+			<div class="content-item">
+				<div class="element-animation">
+				<img src="./img/work/ch2.png" alt="">
+			</div>
+			</div>
+			<div class="content-item">
+				<div class="element-animation">
+				<img src="./img/work/6.png" alt="">
+			</div>
+			</div>
+			<div class="content-item">
+				<div class="element-animation">
+				<img src="./img/work/7.png" alt="">
+			</div>
+			</div>
+			<div class="content-item">
+				<div class="element-animation">
+				<img src="./img/work/holydays.png" alt="">
+			</div>
+			</div>
+	</section>	
+
+	<footer class="footer" id="4">
+		<div class="textblock">
+			<h1 class="footer_h1">
+				Оставьте заявку и я свяжусь с вами
+			</h1>
+			<ul>
+				<li>
+					<input type="text" placeholder="Ваше имя" class="footer__input">
+				</li>
+				<li>
+					<input type="text" placeholder="Ваш телефон, мессенджер или e-mail" class="footer__input">
+				</li>
+			</ul>
+			<h1 class="footer_h1-where">
+				Где с вами удобнее связаться?
+			</h1>
+			<ul>
+				<li>
+					<input type="radio" name="Telegram" class="footer__input-radio">
+				</li>
+				<li>
+					<input type="radio" name="VK" class="footer__input-radio">
+				</li>
+				<li>
+					<input type="radio" name="Написать e-mail" class="footer__input-radio">
+				</li>
+				<li>
+					<input type="radio" name="Позвонить по телефону" class="footer__input-radio">
+				</li>
+			</ul>		
+		</div>
+		
+		<div class="imgblock">
+			<img src="./img/heart.png" class="footer__heart">
+		</div>
+		
+	</footer>
+	
+	<script src="/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="jquery-3.6.1.min.js"></script>
+	<script>
+		function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+</script>
+</body>
+</html>
