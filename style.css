@@ -191,7 +191,7 @@ header{
 .content-item:hover{
 	
     transform: scale(1.009); 
-		will-change: var(--transition);
+	will-change: var(--transition);
 }
 
 
@@ -203,6 +203,18 @@ header{
 @media screen and (max-width: 950px)
  {
   .content-item{
+    padding: calc((1rem + 2vw)/2.25);
+    margin: 0 auto;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.75s;
+    width:  calc(1vh/0.004);
+    object-fit: cover;
+    object-position:center;
+    will-change: var(--transition);
+  }
+
+  .footer__heart{
     padding: calc((1rem + 2vw)/2.25);
     margin: 0 auto;
     background-position: center;
@@ -245,6 +257,10 @@ header{
 		 margin: 0 auto;
 		width:100%;
 	}
+  .imgblock{
+    margin: 0 auto;
+		width:100%;
+  }
 }
 
 
@@ -317,7 +333,8 @@ header{
 	padding-top:var(--paddingtop);
 	max-width: calc(var(--index)*78);
 	margin: 0 auto;
-	height: 100vh;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer_h1{
@@ -337,7 +354,7 @@ header{
     
 .footer__input{
 	margin-bottom: calc(var(--paddingtop)/6);
-	width: calc(1vh*48);
+	width: calc(1vh*38);
 	padding: calc((1rem + 2vw)/2.15);
 	border: 2px solid #763BFF;
 	border-radius: 8px;
@@ -357,9 +374,6 @@ font-weight: 400;
 font-size: var(--font_size);
 }
 
-.footer__heart{
-	width:calc(1vh*70);
-}
 
 .element-animation {
 	margin: 2rem 0;
@@ -375,3 +389,21 @@ font-size: var(--font_size);
 	transition: all 1.5s;
 	transform: translateY(0%);
   }
+
+  .imgblock{
+    margin: 0 auto;
+    width: calc(var(--index)*20);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer__heart{
+    margin: 0 auto;
+    background-position: center;
+    transition: 0.75s;
+    object-fit: cover;
+    object-position:center;
+    will-change: var(--transition);
+    width:calc(var(--index)/0.04);
+  }
+  
