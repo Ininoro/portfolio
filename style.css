@@ -327,7 +327,9 @@ header{
 	border: 1px solid rgb(14, 13, 13);
 	font-size: var(--font_size);
 	width: 100%;
-	padding: 20px 300px 20px 300px;
+	padding: auto;
+	padding-top: calc(var(--paddingtop)/3);
+	padding-bottom: calc(var(--paddingtop)/3);
 	transition:0.35s ease-in-out;
 	border-radius: 16px;
 }
@@ -336,4 +338,19 @@ header{
 	border-color: #7636ff00;
 	color: white;
 	background-color: #7636FF;
+}
+
+/* обо мне */
+
+.info-about{
+	height: 50vh;
+	align-items: center;
+	display: flex;
+	margin: 0 auto;
+	max-width: calc(1vw / 0.012);
+
+}
+
+.info-text{
+	max-width: calc(1vw / 0.023);
 }
