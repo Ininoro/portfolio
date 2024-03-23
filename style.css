@@ -81,23 +81,54 @@ header{
 }
 
 .nav ul{
-	
 	font-size: calc(var(--font_size)/1.5);
 	display: flex;
 	width: calc(1vw / 0.02);
 	justify-content: space-between;
 }
 
-.nav a{
+.nav li{
 	color: #000000;
 	cursor: pointer;
 	transition: 0.5s ease-in-out;
 	will-change: var(--transition);
 }
 
-.nav a:hover{
+
+.nav li:hover{
 	color: #5100ff;
 }
+
+/* обо мне */
+
+.info-about__block{
+	flex-wrap: wrap;
+	align-items: center;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	max-width: calc(1vw / 0.012);
+
+}
+
+.info-text{
+	width: calc(1vw / 0.023);
+	line-height: 130%;
+	font-weight: 500;
+}
+
+
+.img-block{
+	width:calc(1vw / 0.027);
+}
+
+.img-block img{
+	margin: 0 auto;
+	width:calc(1vw / 0.027);
+}
+
+
+/* end обо мне */
 
 .logo{
 	font-size: calc((1rem + 2vw)/1.2);
@@ -236,6 +267,19 @@ header{
 
 @media screen and (max-width: 950px)
  {
+	  
+.img-block{
+	width:100%;
+}
+
+.img-block img{
+	margin: 0 auto;
+	width:100%;
+}
+
+.info-text{
+	width: 100%;
+}
 	.nav{
 		opacity: 0%;
 	}
@@ -249,7 +293,7 @@ header{
     background-position: center;
     cursor: pointer;
     transition: 0.75s;
-    width:  calc(1vh/0.004);
+	width:100%;
     object-fit: cover;
     object-position:center;
     will-change: var(--transition);
@@ -266,7 +310,7 @@ header{
 
   .content-item img{
   margin: 0 auto;
-  width:calc(1vw / 0.013);
+  width:100%;
 }
 .content-item a{
 	max-width:300px;
@@ -277,6 +321,12 @@ header{
 
 }
 @media screen and (max-width: 450px){
+	.info-text{
+		width: 100%;
+	}
+	.info-text p{
+		width: 100%;
+	}
 	.menu__btn{
 		cursor: pointer;
 		opacity: 100%;
@@ -289,6 +339,15 @@ header{
     margin: 0 auto;
 		width:100%;
   }
+  
+.img-block{
+	width:100%;
+}
+
+.img-block img{
+	margin: 0 auto;
+	width:100%;
+}
 }
 
 
@@ -343,7 +402,7 @@ header{
 	max-width: calc(1vw / 0.012);
 	height: 100%;
 	margin: 0 auto;
-	padding-bottom: calc(1vh * 5);
+	padding-bottom: calc(1vh * 10);
 	border-bottom: 1px solid black;
 }
 
@@ -377,17 +436,3 @@ header{
 	background-color: #7636FF;
 }
 
-/* обо мне */
-
-.info-about{
-	height: 50vh;
-	align-items: center;
-	display: flex;
-	margin: 0 auto;
-	max-width: calc(1vw / 0.012);
-
-}
-
-.info-text{
-	max-width: calc(1vw / 0.023);
-}
