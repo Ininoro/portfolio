@@ -101,6 +101,10 @@ header{
 
 /* обо мне */
 
+.info-about{
+	padding-top: calc(1vh * 10);
+}
+
 .info-about__block{
 	flex-wrap: wrap;
 	align-items: center;
@@ -108,7 +112,9 @@ header{
 	margin: 0 auto;
 	justify-content: space-between;
 	max-width: calc(1vw / 0.012);
-
+	padding-bottom: calc(1vh * 10);
+	border-bottom: 1px solid black;
+	padding-top: calc(1vh * 5);
 }
 
 .info-text{
@@ -267,7 +273,14 @@ header{
 
 @media screen and (max-width: 950px)
  {
-	  
+	.service-card{
+		width: 100%;
+	}
+	.service-card p{
+		width: auto;
+		text-align: center;
+		
+	}
 .img-block{
 	width:100%;
 }
@@ -436,3 +449,44 @@ header{
 	background-color: #7636FF;
 }
 
+/* услуги */
+
+.services{
+	padding-top: calc(var(--index) * 1.5);
+	max-width: calc(1vw / 0.012);
+	margin: 0 auto;
+}
+
+.service-cards{
+	padding-top: calc(var(--index) * 1.25);
+	max-width: calc(1vw / 0.012);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+h3{
+	font-family: 'Neutral Face', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.service-card p{
+	line-height: 115%;
+	padding-top: calc(var(--index) / 2);
+	font-size: calc(1vh * 2.2);
+	font-weight: 400;
+	padding-bottom: calc(var(--index) / 12);
+}
+
+.card-icon{
+	padding-bottom: calc(var(--index) / 2);
+	margin: 0 auto;
+	max-width:calc(1vw * 4);
+}
+
+.service-card{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
