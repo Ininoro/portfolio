@@ -271,6 +271,55 @@ header{
 	width:calc(1vw / 0.048);
   }
 
+  
+/* услуги */
+
+.services{
+	padding-top: calc(var(--index) * 1.5);
+	max-width: calc(1vw / 0.012);
+	margin: 0 auto;
+	padding-bottom: calc(var(--index) * 1.5);
+}
+
+.service-cards{
+	padding-top: calc(var(--index) * 1.25);
+	max-width: calc(1vw / 0.012);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.service-card{
+	margin-bottom: 20px;
+	border-radius: 16px;
+	padding: 20px;
+	border: 1px solid rgb(22, 21, 21);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	max-width: calc(1vw / 0.06);
+}
+
+h3{
+	font-family: 'Neutral Face', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.service-card p{
+	line-height: 115%;
+	padding-top: calc(var(--index) / 2);
+	font-size: calc(1vh * 2.2);
+	font-weight: 400;
+	padding-bottom: calc(var(--index) / 12);
+}
+
+.card-icon{
+	padding-bottom: calc(var(--index) / 2);
+	margin: 0 auto;
+	max-width:calc(1vw * 4);
+}
+
 @media screen and (max-width: 950px)
  {
 	.service-card{
@@ -333,7 +382,38 @@ header{
 }
 
 }
+@media screen and (max-width: 650px){
+
+	.services{
+		max-width: calc(1vw / 0.012);
+	}
+
+	.service-card{
+		min-width: 90%;
+	}
+
+	.service-cards{
+		max-width: calc(1vw / 0.012);;
+	}
+
+	.service-card p{
+		width: auto;
+		text-align: center;
+	}
+}
+
+
 @media screen and (max-width: 450px){
+	
+	.service-cards{
+		width: 600px;
+		width: 100%;	
+	}
+	
+	.service-card{
+		width: 400px;
+	}
+
 	.info-text{
 		width: 100%;
 	}
@@ -449,44 +529,19 @@ header{
 	background-color: #7636FF;
 }
 
-/* услуги */
 
-.services{
-	padding-top: calc(var(--index) * 1.5);
-	max-width: calc(1vw / 0.012);
-	margin: 0 auto;
-}
+@media screen and (max-width: 1190px){
+	.services{
+		max-width: calc(1vw / 0.012);
+		margin: 0 auto;
+	}
+	
+	.service-cards{
+		max-width: calc(1vw / 0.01);
+	}
+	
+	.service-card{
+		max-width: calc(1vw / 0.03);
+	}
 
-.service-cards{
-	padding-top: calc(var(--index) * 1.25);
-	max-width: calc(1vw / 0.012);
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-h3{
-	font-family: 'Neutral Face', sans-serif;
-	font-weight: 400;
-	font-size: 18px;
-}
-
-.service-card p{
-	line-height: 115%;
-	padding-top: calc(var(--index) / 2);
-	font-size: calc(1vh * 2.2);
-	font-weight: 400;
-	padding-bottom: calc(var(--index) / 12);
-}
-
-.card-icon{
-	padding-bottom: calc(var(--index) / 2);
-	margin: 0 auto;
-	max-width:calc(1vw * 4);
-}
-
-.service-card{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
 }
