@@ -32,7 +32,7 @@ body {
 	width: 100%;
     max-width: 100%;
 	line-height: 1;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Manrope', sans-serif;
 	font-weight: 600;
 	overflow-x:hidden;	
 	background: radial-gradient(102.98% 128.03% at 80.49% -2.98%, #7636FF 0%, #AE87FF 5.73%, #B998FF 9.38%, #CDB5FF 20.31%, #CFB8FF 21.34%, #CFB8FF 21.35%, #E4D7FF 31.25%, #E4D7FF 31.25%, #F2ECFF 46.88%, #F6F1FF 54.17%, #FFFFFF 73.44%) ;
@@ -272,7 +272,7 @@ header{
   }
 
   
-/* услуги */
+
 
 /* footer */
 
@@ -311,7 +311,10 @@ header{
 .social h2{
 	font-size: var(--font_size);
 }
+/* footer end */
 
+
+/* услуги */
 .services{
 	padding-top: calc(var(--index) * 1.5);
 	max-width: calc(1vw / 0.012);
@@ -320,6 +323,7 @@ header{
 }
 
 .service-cards{
+	padding-bottom: calc(var(--index) * 2);
 	padding-top: calc(var(--index) * 1.25);
 	max-width: calc(1vw / 0.012);
 	display: flex;
@@ -357,6 +361,36 @@ h3{
 	margin: 0 auto;
 	max-width:calc(1vw * 4);
 }
+
+
+.price{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 0px 25px 0px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	margin-bottom: calc(var(--paddingtop)/1.5);
+	margin-top: calc(var(--paddingtop)/3);
+}
+
+
+
+
+
+
+.price h2{
+	font-size:calc(1vh * 2);
+	font-weight: 400;
+}
+
+.price p{
+	font-size:calc(1vh * 2);
+	
+}
+
+
+/* услуги end */
 
 @media screen and (max-width: 950px)
  {
