@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.cdnfonts.com/css/neutral-face" rel="stylesheet">
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/app.js" defer></script>
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+	<title>Viktoria Potapova</title>
+</head>
+<body>
+	<header>
+		<a href="index.html" class="logo"><div class="logo">
+			Victoria
+			<p>Potapova</p>
+		</div>	
+		</a>
+		<div class="nav">
+			<ul>
+				<a href="#1"><li>Портфолио</li></a>
+				<a href="#2"><li>Обо мне</li></a>
+				<a href="#3"><li>Услуги</li></a>
+				<a href="#4"><li>Контакты</li></a>
+			</ul>
+		</div>
+
+		<span onclick="openNav()" class="menu__btn">☰</span>
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="#1"  onclick="closeNav()">Портфолио</a>
+				<a href="#2" onclick="closeNav()">Обо мне</a>
+				<a href="#3" onclick="closeNav()">Услуги</a>
+				<a href="#4" onclick="closeNav()">Контакты</a>
+			</div>
+		</div>
+		
+	</header>
+
+	<section class="container">
+		<div class="desc_text">
+			<h1>
+				Привет! Мeня зовут Вика, мне 22 года, и я хочу покорить этот скучный мир
+			</h1>
+			
+			<h2>
+				Я ценю творчество, искренность и свободу превыше всего ✮⋆˙ 
+				<br>Эти идеалы определяют мой подход к решению проблем и жизни в целом
+			</h2>
+			
+			<a href="https://t.me/ininoro" target="_blank" ><button class="click">
+				хочу с тобой сотрудничать!
+			</button>
+			</a>
+			
+
+		</div>
+		
+	</section>
+
+	<section class="aboutme" id="1">
+		<h1 class="whoami" >Мои работы</h1>
+
+		<div class="content_collage">
+			
+			<div class="content-item">
+				<a target="_blank" href="https://www.behance.net/gallery/190866097/bojcovskij-klub-kartochka-filma">
+				<img src="./img/work/fight_club.png" alt="">
+			
+		</div>
+	</a>
+		<div class="content-item">
+			<img src="./img/work/Poster.png" alt="">
+			<img src="./fonts/outfit-regular.woff2" alt="">
+		</div>
+		<div class="content-item">
+			<img src="./img/work/lection.png" alt="">
+		</div>
+		
+			<div class="content-item">
+				<a target="_blank" href="https://www.behance.net/gallery/181327251/stories-for-investment-instagram">
+					<img src="./img/work/preview_stories.png" alt="">
+			</div>
+		</a>
+			
+			<div class="content-item">
+				<a target="_blank" href="https://www.behance.net/gallery/171180281/kejs-dizajn-sajta-iz-ruk-v-ruki">
+				<img src="./img/work/10.png" alt="">
+			
+			</div>
+		</a>
+			
+			<div class="content-item">
+				<a target="_blank" href="https://www.behance.net/gallery/181326309/camp-poster">
+				<img src="./img/work/preview_holydays.png" alt="">
+			</div>
+		</a>
+	</div>
+
+			<a target="_blank" href="https://www.behance.net/ininoro"><button class="button_more">Хочу увидеть больше!</button></a>
+
+		
+	</section>
+
+	<section class="info-about" id="2">
+		<h1 class="whoami">Обо мне</h1>
+		<div class="info-about__block">
+			<p class="info-text">
+				Я занимаюсь веб-разработкой, дизайном разных плакатов, презентаций, снимаю видео на ютуб.
+	в целом, получаю удовольствие от жизни. <br>Люблю заниматься спортом, плавать, играть на гитаре, рисовать, придумывать новые идеи, психологию, философию.
+	<br>Мои знания и умения в веб-разработке говорят о том, что я обладаю техническим складом ума, люблю творить что-то новое и функциональное. Моя способность создавать веб-сайты и приложения отражает мою креативность и стремление к реализации себя в технологической сфере.
+</p>
+		
+			<div class="img-block">
+				<img src="./img/photo.jpg" alt="">
+			</div>
+		</div>
+			
+	</section>
+
+	<section class="services" id='3' >
+		<h1 class="whoami">Услуги</h1>
+		<div class="service-cards" >
+			<div class="service-card">
+				<img src="./img/web.png" class="card-icon">
+				<h3>Веб-разработка</h3>
+				<p> ✩ Разработка уникальных веб-сайтов, адаптированных под ваши потребности </p>
+				<p>✩ Создание функциональных и инновационных веб-приложений</p>
+				<p>✩ Техническая поддержка и оптимизация вашего онлайн пространства</p>
+			</div>
+			<div class="service-card">
+				<img src="./img/design.png" alt="" class="card-icon">
+				<h3>Дизайн</h3>
+<p>✩ Превью для ютуб-видео, обложки, шапки</p>
+<p>✩ Креативные и профессиональные презентации для вашего бизнеса или проекта</p>
+			</div>
+			<div class="service-card">
+				<img src="./img/personality.png" alt="" class="card-icon">
+				<h3>Видео продакшн</h3>
+				<p>✩ Видео-монтаж</p>
+				<p>	✩ Создание увлекательного видеоконтента для YouTube, от коротких видеороликов до полноценных видео-роликов </p>
+				
+			</div>
+			<div class="service-card">
+				<img src="./img/personality.png" alt="" class="card-icon">
+				<h3>Развитие личности</h3>
+				<p> ✩ Консультации по психологии и философии для личного роста и развития </p>
+				<p>✩ Обучение web-специальностям </p>
+				<p>✩ Придумывание оригинальных идей и концепций для проектов и творческих начинаний</p>
+			</div>
+		</div>
+		<h1 class="whoami">Цены</h1>
+		<div class="price">
+			<h2>Landing Page Tilda</h2>
+			<p>от 5000 рублей</p>
+		</div>
+		<div class="price">
+			<h2>Сайт на WordPress</h2>
+			<p>от 10 000 рублей</p>
+		</div>
+		<div class="price">
+			<h2>Дизайн</h2>
+			<p>от 500 рублей</p>
+		</div>
+	</section>
+	<footer class="footer" id="4">
+		<h1 class="whoami">Как со мной связаться?</h1>
+		<div class="footer_block">
+			<div class="social">
+				<h2>TG</h2>
+				<a class="href" href="https://t.me/ininoro">@ininoro</a>
+				<a href="https://t.me/ininoro">
+					<svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="52.5" cy="52.5" r="51" stroke="black" stroke-width="3"/>
+						<path d="M34 71L71.5 33M71.5 33V62M71.5 33H42" stroke="black" stroke-width="3"/>
+					</svg>
+				</a>
+				
+			</div>
+			<div class="social">
+				<h2>E-mail</h2>
+				<a class="href" href="mailto:noolyque@gmail.com">noolyque@gmail.com</a>
+				<a href="mailto:noolyque@gmail.com">
+					<svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="52.5" cy="52.5" r="51" stroke="black" stroke-width="3"/>
+						<path d="M34 71L71.5 33M71.5 33V62M71.5 33H42" stroke="black" stroke-width="3"/>
+					</svg>
+				</a>
+				
+			</div>
+			<!-- <div class="social">
+				<h2>Telegram</h2>
+				<a class="href" href="https://t.me/#">#</a>
+				<a href="https://t.me/#">
+					<svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="52.5" cy="52.5" r="51" stroke="black" stroke-width="3"/>
+						<path d="M34 71L71.5 33M71.5 33V62M71.5 33H42" stroke="black" stroke-width="3"/>
+					</svg>
+				</a>
+				
+			</div> -->
+		</div>
+		<a href="https://www.behance.net/ininoro">
+			<h2 class="behance_link">Behance <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1 25L25 1M25 1V19.3158M25 1H6.12" stroke="#6F6F6F" stroke-width="2" />
+			  </svg></h2>
+		</a>
+		
+	</footer>
+	
+	<script src="/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="jquery-3.6.1.min.js"></script>
+	<script>
+		function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+</script>
+</body>
+
+</html>
+
+
+
+
